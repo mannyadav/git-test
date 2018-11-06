@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup,Label, Input, Col, Row, FormFeedback } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup,Label, Input, Col, FormFeedback } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class  Contact extends Component {
@@ -158,7 +158,7 @@ class  Contact extends Component {
                                     <Input type="tel" id="telnum" name="telnum"
                                         placeholder="Tel. number"
                                         value={this.state.telnum}
-                                        value={this.state.telnum}
+                                        valid={errors.telnum===''}
                                         invalid={errors.telnum!==''}
                                         onBlur ={this.handleBlur('telnum')}
                                         onChange={this.handleInputChange} />
